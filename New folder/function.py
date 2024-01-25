@@ -193,4 +193,56 @@
 # haina_hola=emp("what are you doing",1999,174489723984)
 # haina_hola.show()
 
- 
+# oops features 
+#  encapsulation 
+# inheritance 
+# polymorphism 
+# abstraction 
+
+# special method (dander method )
+
+#  __init__(constructor ) method which is called at the time of creating onject 
+# __str__()
+# __repe__()
+
+# circle relared problem using the class concept in the python 
+
+# class circle:
+#     def __init__(self,r):
+#         self.radius=r
+#     def cal_area(self):
+#         area=3.1416*self.radius**2
+#         print("area of the circle is ",area)
+#     def calc_circumference(self):
+#         circ=2*3.1416*self.radius
+#         print("circumference of the circle is ",circ)
+             
+# calculation=circle(2) 
+# calculation.cal_area()  
+# calculation.calc_circumference()
+
+
+
+# ((in the above program we can import math library instead to use the value of the pi ))
+# in the below program i have use a seperate method to print the info usig f string 
+
+
+# import math
+# class circle:
+#     def __init__(self,r):
+#         self.radius=r
+#     def cal_area(self):
+#         self.area=math.pi*self.radius**2
+#         # print("area of the circle is ",area)
+#     def calc_circumference(self):
+#         self.circ=2*math.pi*self.radius
+#         # print("circumference of the circle is ",circ)
+#     def disp(self):
+#         print(f"area {self.area}")
+#         print(f"circumference {self.circ }")       
+# calculation=circle(2) 
+# calculation.cal_area()  
+# calculation.calc_circumference()
+# calculation.disp()
+
+
