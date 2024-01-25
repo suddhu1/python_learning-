@@ -246,3 +246,43 @@
 # calculation.disp()
 
 
+# class circle:
+#     pi=3.1416 # class variable
+#     def __init__(self,r):
+#         self.radius=r
+#     def cal_area(self):
+#         self.area=circle.pi*(self.radius**2) # circle.pi accessing the class variable 
+#         # print("area of the circle is ",area)
+#     def calc_circumference(self):
+#         self.circ=(2*circle.pi)*self.radius
+#         # print("circumference of the circle is ",circ) 
+#     def disp(self):
+#         print(f"area {self.area}")
+#         print(f"circumference {self.circ }")       
+# calculation=circle(8) 
+# calculation.cal_area()  
+# calculation.calc_circumference()
+# calculation.disp()
+
+class emp():
+    arise_amount=float(input("enter the percentage of the salary increase"))
+    def __init__(self,a,b,c):
+        self.name=a
+        self.age=b
+        self.sal=c
+    def disp_bef(self):
+        print(f"the salary of {self.name} is{self.sal}")
+    def increase_sal(self):
+        self.sal+=((emp.arise_amount/100)*self.sal)
+ 
+    def display(self):
+        print(f"the amount of the salary of {self.name}after the increament is {self.sal}")
+
+obj1=emp("sudarshan",12,30000)
+obj2=emp("aayush",13,5600)
+obj1.disp_bef()
+obj1.increase_sal()
+obj1.display()
+obj2.disp_bef()
+obj2.increase_sal()
+obj2.display()
