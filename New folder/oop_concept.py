@@ -153,21 +153,26 @@
 # using the super method 
 # or calling with the help of the class name
 
-class person:
-    def __init__(self,age,name):
-        self.name=name
-        self.age=age
-        print("person constructor called ")
-class emp(person):
-    def __init__(self,age,name,ids,sal):
-        person.__init__(self,age,name)
-        self.ids=ids
-        self.sal=sal
-        print("employee constructor called ")
+# class person:
+#     def __init__(self,age,name):
+#         self.name=name
+#         self.age=age
+#         print("person constructor called ")
+# class emp(person):
+#     def __init__(self,age,name,ids,sal):
+#         person.__init__(self,age,name)
+#         self.ids=ids
+#         self.sal=sal
+#         print("employee constructor called ")
 
-class manager(emp):
-    def __init__(self, age, name, ids, sal,bonus):
-        emp.__init__(self,age,name,ids,sal)
-        self.bonus=bonus
-        print("manager constructor called ")
-m= manager(24,"sudarshan","SEC079BEI009",500000,100000)
+# class manager(emp):
+#     def __init__(self, age, name, ids, sal,bonus):
+#         emp.__init__(self,age,name,ids,sal)
+#         self.bonus=bonus
+#         print("manager constructor called ")
+# m= manager(24,"sudarshan","SEC079BEI009",500000,100000)
+
+
+# for super method we use super().__init__(parameter) no need of writing self as parameter as we are
+# using the super method 
+# replace emp.__init__(self,age,name,ids,sal) with super().__init__(age,name,ids,sal)
