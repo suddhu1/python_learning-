@@ -145,3 +145,29 @@
 #         self.bonus=bonus
 #         print("manager constructor called ")
 # m= manager(24,"sudarshan","SEC079BEI009",500000,100000)
+
+
+#  in c++ the boject of the derived  class can can call the constructor of the base class also 
+# but in the python the object of the derived  class can't  call the constructor of the base class 
+# this can  be solved in the python in the following way 
+# using the super method 
+# or calling with the help of the class name
+
+class person:
+    def __init__(self,age,name):
+        self.name=name
+        self.age=age
+        print("person constructor called ")
+class emp(person):
+    def __init__(self,age,name,ids,sal):
+        person.__init__(self,age,name)
+        self.ids=ids
+        self.sal=sal
+        print("employee constructor called ")
+
+class manager(emp):
+    def __init__(self, age, name, ids, sal,bonus):
+        emp.__init__(self,age,name,ids,sal)
+        self.bonus=bonus
+        print("manager constructor called ")
+m= manager(24,"sudarshan","SEC079BEI009",500000,100000)
