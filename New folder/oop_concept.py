@@ -176,3 +176,92 @@
 # for super method we use super().__init__(parameter) no need of writing self as parameter as we are
 # using the super method 
 # replace emp.__init__(self,age,name,ids,sal) with super().__init__(age,name,ids,sal)
+
+
+# hirarcical inheritance
+
+# class school:
+#     def __init__(self,name,age):
+#          self.name=name
+#          self.age=age
+# class student(school):
+#         def __init__(self,name,age,rollno,per):
+#              super().__init__(name,age)
+#              self.rollno=rollno
+#              self.per=per
+#         def __repr__(self):
+#              return f"name of the student is {self.name} his age is {self.age},rollno id {self.rollno} and his percentage is {self.per}"
+        
+# class teacher(school):
+#     def __init__(self,name,age,sal):
+#          super().__init__()
+#          self.sal=sal
+# sudarshan=student("sudarshan",23,2323,90)
+# print(sudarshan)
+
+
+# multiple inheritance 
+# class A:
+#     def __init__(self):
+#         print("A has been called")  
+# class B:
+#      def __init__(self):
+#         print("B has been called")
+# class C(A,B):
+#      def __init__(self):
+#         print(" C has been called")
+# call=C()
+
+
+
+# hybrid inheritance in python 
+
+
+# class A:
+#     pass
+# class B(A):
+#     pass
+# class C(A):
+#     pass
+# class D(B,C):
+#     pass
+
+
+# polymorphism in python oop refers to having the differnt form of the same methods or the entities
+# for example we can use + for additioin as well as for string concatination 
+
+
+ 
+# in this program we are trying to achive polymorphism for adding the two coordinate points 
+# but we are not being able to do so 
+
+
+# class point:
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y 
+# pi=point(2,4)
+# p2=point(3,5)
+# print(pi+p2)
+
+
+# the above problem id solved using the magic method add 
+
+# class point:
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y 
+#     def __add__(self,other):
+#         x=self.x+other.x
+#         y=self.y+other.y
+#         p=point(x,y)
+#         return p
+#     def __repr__(self):
+#         return f"x={self.x},y={self.y}"
+# pi=point(2,4)
+# p2=point(3,5)
+# print(pi+p2)
+
+
+ 
+
