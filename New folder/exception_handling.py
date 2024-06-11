@@ -253,5 +253,97 @@
 # print(next(a))
  
 
+#  =====================================================
+# reduce 
+# import functools
+
+# mylist=[1,2,3,4,5]
+# print(functools.reduce(lambda a,b:a if a>b else b,mylist))
+
+
+
+
+# itrator and the Generator
+
+#  Generator 
+# def gen(n):
+#     for i in range(n):
+#         yield i 
+
+# for i in gen(20):
+#     print(gen )
+
+        
+
+#  using the generator we are saving the space in our memory
+# .the generator will use the single memory address to generate the vlaue  using the keyword yield
+
+
+# ========================================================
+
+#  itrable = list,tuple , string , set, dict,range
+
+# it is the sequence of the value top of which we can iterate
+# int and the float are not the iterable 
+
+# iterable can be conveted into iterator 
+
+# iterator is the object on the top of which we can perform the iterarion 
+
+# we use the concept of the itirator and the iteration just to manage the memory efficiently 
+
+# example
+
+# mylist=[1,2,4,5,6]
+# print(iter(mylist))  # gives the singlr memory location 
+
+# for generating the itirator object we use the key word iter
+
+
+# =============================================================================
+
+# logging and  file handling 
+
+# logging is use to track the error or exception or informaton in my code 
+
+# it is also used to preserve the error or the info fron the program 
+#  for the logging function 
+# we have logging  module 
+# we do (import logging) 
+
+# def test(in_num):
+#     print("i an the function ")
+#     result=in_num*10
+#     print("mulltiplication is done")
+#     return result 
+# x=test(52)
+# print(f"here is the result: {x}")
+
+# # output
+# i an the function 
+# mulltiplication is done
+# here is the result: 520
+
+# what we are doing 
+# we are going to perserve the onfo 
+# this information can be differenet types (application or software)
+
+# information 
+
+# info--confirmation that we are getting what we except 
+# error --softer not being able to perform some task due to function error 
+# dubug--detailed information 
+# Warning-- an indication that something serious has happened 
+# critical--serious error 
+
+# catagorized by python as
+# none--0
+# debug--10
+# info--20
+# Warning--30
+# error--40 
+# critical--50
+
+
 
 
